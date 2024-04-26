@@ -12,7 +12,7 @@
         function getSound() {
             console.log("getSound Called")
             const name = document.getElementById('name').value;
-            fetch(`http://localhost:3030/sound/${name}`)
+            fetch(`https://port-0-node-sounds2-1pgyr2mlvgm11f9.sel5.cloudtype.app/sound/${name}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data.sound);
